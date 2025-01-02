@@ -97,7 +97,7 @@ public void venderProduto(int id) {
         }
     }
 }
-
+//Funçao para listar os produtos vendidos 
 public ArrayList<ProdutosDTO> listarProdutosVendidos() {
     String sql = "SELECT * FROM produtos WHERE status = ?";
     listagem.clear();
@@ -130,5 +130,6 @@ public ArrayList<ProdutosDTO> listarProdutosVendidos() {
     
     return listagem;
 }
+
 }
 
