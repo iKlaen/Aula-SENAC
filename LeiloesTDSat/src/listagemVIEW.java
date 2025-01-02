@@ -120,7 +120,8 @@ public class listagemVIEW extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVenderActionPerformed
-  int selectedRow = listaProdutos.getSelectedRow();
+  //Inclusao do botao vender para atualizar o status de venda do produto
+        int selectedRow = listaProdutos.getSelectedRow();
 
     if (selectedRow != -1) {
         int id = (int) listaProdutos.getValueAt(selectedRow, 0); // Supondo que o ID está na primeira coluna
