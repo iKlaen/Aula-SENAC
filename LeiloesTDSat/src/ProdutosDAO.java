@@ -70,7 +70,7 @@ public ArrayList<ProdutosDTO> listarProdutos() {
     
     return listagem;
 }
-
+//Operação de vender produtos
 public void venderProduto(int id) {
     String sql = "UPDATE produtos SET status = ? WHERE id = ?";
     
@@ -97,6 +97,7 @@ public void venderProduto(int id) {
         }
     }
 }
+
 public ArrayList<ProdutosDTO> listarProdutosVendidos() {
     String sql = "SELECT * FROM produtos WHERE status = ?";
     listagem.clear();
